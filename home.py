@@ -1,5 +1,11 @@
 import streamlit as st
 
+st.set_page_config(
+        page_title="Asistente Virtual",
+        page_icon=":robot_face:",
+        layout="wide",
+)
+
 st.title("Welcome to your financial assistant")
 
 st.divider()

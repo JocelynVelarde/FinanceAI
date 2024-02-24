@@ -7,7 +7,8 @@ from langchain.llms import OpenAI
 import tempfile
 from pages.admin import get_pdf_file, get_csv_file
 
-st.write("Welcome to the admin page")
+
+st.write("Welcome to the user page")
 st.divider()
 
 pdf = get_pdf_file()
