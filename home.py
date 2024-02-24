@@ -4,9 +4,30 @@ st.set_page_config(
         page_title="Asistente Virtual",
         page_icon=":robot_face:",
 )
+st.title("Welcome to FinanceAI 🪙")
+st.divider()
+st.write("We have multiple amazing features for administrators and users.")
+admin_col, user_col = st.columns(2)
 
-with open('./styles/home.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+with admin_col:
+	st.subheader('Admin')
+	st.write('- Upload your own knowledge base about relevant information in your company.')
+	st.write('- Additioanlly include a personalized data base with employee information so people can ask about who can solve their problems and be in contact with them.')
+	st.write('- With our data vecotirization information can be secure and not wide spread.')
+	st.write('- You can also observe metrics on prompt costs and assistant performance.')
+	st.write('- Use of personalized agents to determine actions in base of existing data to avoid hallusinations.')
+
+with user_col:
+	st.subheader('User')
+	st.write('- Start a conversation with the chatbot.')
+	st.write('- Ask about relevant information in your company.')
+	st.write('- Ask about who can solve your problems and be in contact with them.')
+	st.write('- Receive personalized information about your company and problem solving.')
+      
+st.divider()
+
+#with open('./styles/home.css') as f:
+    #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
 st.title("Chat with your Financial Advisor")
@@ -41,5 +62,7 @@ with col2:
 with col3:
     st.write(' ')
 
-st.write("Thanks for using FinanceAI!")
+st.divider()
+
+st.write("Thanks for using FinanceAI 🪙")
 

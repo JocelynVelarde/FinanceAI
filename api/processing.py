@@ -1,4 +1,5 @@
 from langchain_openai import OpenAI
+from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain_experimental.agents.agent_toolkits import create_csv_agent
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
@@ -44,7 +45,7 @@ def create_agent(file_path):
     # Create the agent using create_csv_agent() or a similar function
     agent = create_csv_agent(
         #tools=[injection_identifier],
-        llm=OpenAI(temperature=0),
+        llm=OpenAI(temperature=0, max_tokens=100, api_key=ApiKey),
         path=file_path,
         verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION)
     return agent

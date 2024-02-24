@@ -27,8 +27,11 @@ if contact_agent:
             tmp_file.write(uploaded_file.getvalue())
             tmp_file.flush()
             agent = create_agent(tmp_file.name)
-            response = agent.run(query)
-            st.write("You can contact: " + response)
+            with get_openai_callback() as cb:
+                response = agent.run(query)
+                st.sidebar.write("Expenses: ", cb)
+                st.write("You can contact: " + response)
+
 
              
 cancel_button = st.button('Find solution')
@@ -56,7 +59,7 @@ if cancel_button:
                     print(cost)
                 
                 st.sidebar.divider()
-                st.sidebar.write("Cost: ", cost)
+                st.sidebar.write("Expenses: ", cost)
                 st.write(response)
 
 

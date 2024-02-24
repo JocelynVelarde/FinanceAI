@@ -7,3 +7,7 @@ def getOpenAIkey():
 def getAssistant():
     ASSISTANT_ID = st.secrets["ASSISTANT_ID"]
     return ASSISTANT_ID
+
+def getSerpapi():
+    SERPAPI_KEY = st.secrets["SERPAPI_KEY"]
+    return SERPAPI_KEY
