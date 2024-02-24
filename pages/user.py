@@ -5,7 +5,6 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 from langchain.llms import OpenAI
 import tempfile
-from pages.admin import get_pdf_file, get_csv_file
 
 
 st.title("Type in your question and we will find the best solution for you! 🚀")
@@ -56,7 +55,7 @@ if cancel_button:
                     response = chain.run(input_documents=docs, question=query)
                     print(cost)
                 
-                st.divider()
+                st.sidebar.divider()
                 st.sidebar.write("Cost: ", cost)
                 st.write(response)
 

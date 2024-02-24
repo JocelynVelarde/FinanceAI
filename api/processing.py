@@ -13,7 +13,7 @@ from api.auth_openai import getOpenAIkey
 
 #Hugging Face Prompt Injection
 
-from optimum.onnxruntime import ORTModelForSequenceClassification
+'''from optimum.onnxruntime import ORTModelForSequenceClassification
 from transformers import AutoTokenizer, pipeline
 
 # Using https://huggingface.co/laiyer/deberta-v3-base-prompt-injection
@@ -36,14 +36,14 @@ from langchain_experimental.prompt_injection_identifier import (
 
 injection_identifier = HuggingFaceInjectionIdentifier(
     model=classifier,
-)
+)'''
 
 ApiKey = getOpenAIkey()
 
 def create_agent(file_path):
     # Create the agent using create_csv_agent() or a similar function
     agent = create_csv_agent(
-        tools=[injection_identifier],
+        #tools=[injection_identifier],
         llm=OpenAI(temperature=0),
         path=file_path,
         verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION)
