@@ -6,7 +6,7 @@ with open('./styles/getstarted.css') as f:
 st.title("Get Started with your FinanceAI Chatbot ⭐")
 st.divider()
 
-st.write("Follow this instructions to start chatting and solve all your questions immediately")
+st.markdown("<span style='margin-left: 70px; font-weight: 20px; font-size: 20px'>Follow this instructions to start chatting and solve all your questions immediately</span>", unsafe_allow_html=True)
 st.write("1. Click the button to start chatting")
 st.write("2. Ask about any potential issue or question you have")
 st.write("3. Click on Get Solution to find the best solution for your issue")
@@ -16,20 +16,7 @@ st.divider()
 col1, col2, col3 = st.columns(3)
 
 #with col1:
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
-    #st.write(" ")
+    #st.write("            ")
 
 st.page_link("pages/user.py", label="Click this button to start chatting 🤖")
 
@@ -39,7 +26,7 @@ st.page_link("pages/user.py", label="Click this button to start chatting 🤖")
     
 
 #with col3:
-    #st.write(' ')
+    #st.write('           ')
 
 
 st.divider()
