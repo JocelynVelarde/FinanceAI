@@ -36,4 +36,3 @@ def process_text(text):
     knowledgeBase = FAISS.from_texts(chunks, embeddings)
     
     return knowledgeBase
-
