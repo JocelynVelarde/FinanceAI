@@ -18,7 +18,7 @@ col1, col2, col3 = st.columns(3)
 #with col1:
     #st.write("            ")
 
-st.page_link("pages/user.py", label="Click this button to start chatting 🤖")
+st.page_link("pages/user.py", label="START CHATTING🤖")
 
 #with col2:
     #st.image('https://cdn-icons-png.flaticon.com/512/5356/5356355.png', width=500)
