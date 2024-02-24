@@ -6,7 +6,7 @@ st.set_page_config(
 )
 st.title("Welcome to FinanceAI 🪙")
 st.divider()
-st.markdown("<span style='margin-left: 110px; font-weight: 20px; font-size: 20px'>We have multiple amazing features for administrators and users.</span>", unsafe_allow_html=True)
+st.markdown("<span style='margin-left: 70px; font-weight: 20px; font-size: 20px'>We have multiple amazing features for administrators and users.</span>", unsafe_allow_html=True)
 admin_col, user_col = st.columns(2)
 
 with admin_col:
