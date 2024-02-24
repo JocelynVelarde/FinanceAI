@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.st-emotion-cache-euc8px {
+.st-emotion-cache-j7qwjs.e11k5jya2{
     background-color: #779BF1;
     color: white;
     margin: 10px;
@@ -24,7 +24,7 @@
     z-index: 0;
 }
 
-.st-emotion-cache-euc8px:before {
+.st-emotion-cache-j7qwjs.e11k5jya2:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -41,19 +41,19 @@
     border-radius: 10px;
 }
 
-.st-emotion-cache-euc8px:active {
+.st-emotion-cache-j7qwjs.e11k5jya2:active {
     color: #779BF1
 }
 
-.st-emotion-cache-euc8px:active:after {
+.st-emotion-cache-j7qwjs.e11k5jya2active:after {
     background: transparent;
 }
 
-.st-emotion-cache-euc8px:hover:before {
+.st-emotion-cache-j7qwjs.e11k5jya2:hover:before {
     opacity: 1;
 }
 
-.st-emotion-cache-euc8px:after {
+.st-emotion-cache-j7qwjs.e11k5jya2:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -71,8 +71,18 @@
     100% { background-position: 0 0; }
 }
 
-.st-emotion-cache-1p5f7o8 {
+.st-emotion-cache-eqffof {
     font-family: "Mabry Pro";
     text-align: center;
     font-weight: 20px;
+}
+
+.st-emotion-cache-10fz3ls.e1nzilvr5 {
+    color: white;
+    margin-left: 25px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Mabry Pro';
+    font-weight: bolder;
 }

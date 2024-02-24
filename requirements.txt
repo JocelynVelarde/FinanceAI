@@ -3,4 +3,7 @@ faiss-cpu
 faiss-gpu
 langchain-openai
 langchain-experimental
-langchain
+pypdf2
+temp
+langchain-community
+tabulate
