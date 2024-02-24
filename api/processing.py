@@ -14,10 +14,9 @@ from api.auth_openai import getOpenAIkey
 
 ApiKey = getOpenAIkey()
 
-# Función para crear el agente
-def create_agent():
-    # Crea el agente utilizando create_csv_agent() u otra función similar
-    agent=create_csv_agent(llm=OpenAI(temperature=0),path=r"C:\Users\Poncho\Documents\FinanceAI\api\employee_data.csv",verbose=True,agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION)
+def create_agent(file_path):
+    # Create the agent using create_csv_agent() or a similar function
+    agent = create_csv_agent(llm=OpenAI(temperature=0), path=file_path, verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION)
     return agent
 
 # Función para procesar el texto y crear la base de conocimientos
