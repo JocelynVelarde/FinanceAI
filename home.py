@@ -27,7 +27,7 @@ with user_col:
 st.divider()
 
 with open('./styles/home.css') as f:
-    #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
 st.title("Chat with your Financial Advisor")
