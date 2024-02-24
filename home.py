@@ -19,7 +19,7 @@ with admin_col:
 
 with user_col:
 	st.markdown("<span style='text-align: center; font-weight: 20px; font-size: 40px'>User</span>", unsafe_allow_html=True)
-	st.markdown("<span style='text-align: left; font-weight: 20px;>- Start a conversation with the chatbot.</span>", unsafe_allow_html=True)
+	st.markdown("<span style='text-align: left; font-weight: 20px'>- Start a conversation with the chatbot.</span>", unsafe_allow_html=True)
 	st.markdown('- Ask about relevant information in your company.')
 	st.markdown('- Ask about who can solve your problems and be in contact with them.')
 	st.markdown('- Receive personalized information about your company and problem solving.')
