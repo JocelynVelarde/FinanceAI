@@ -1,54 +1,29 @@
 import streamlit as st
-from PyPDF2 import PdfReader
-from api.processing import process_text, create_agent
-from langchain.chains.question_answering import load_qa_chain
-from langchain.callbacks import get_openai_callback
-from langchain.llms import OpenAI
 import tempfile
 
-st.write("Welcome to the admin page")
+
+
+st.title("Welcome to the admin page")
 st.divider()
 
-pdf = st.file_uploader('Upload your PDF Document', type='pdf')
-uploaded_file = st.file_uploader('Upload your CSV File', type='csv')
+st.write("This page is for the admin to upload the PDF and CSV files")
 
-if uploaded_file is not None:
-    with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
-        tmp_file.write(uploaded_file.getvalue())
-        tmp_file.flush()
-        agent = create_agent(tmp_file.name)
+uploaded_file = st.file_uploader('Upload your PDF Document', type='pdf')
 
-    
-if pdf is not None:
-        pdf_reader = PdfReader(pdf)
-        # Text variable will store the pdf text
-        text = ""
-        for page in pdf_reader.pages:
-            text += page.extract_text()
-        
-        # Create the knowledge base object
-        knowledgeBase = process_text(text)
-        
-        query = st.text_input('Ask a question to the PDF')
-        cancel_button = st.button('Cancel')
-        
-        if cancel_button:
-            st.stop()
-        
-        if query:
-            docs = knowledgeBase.similarity_search(query)
-            response = agent.run(query)
-            st.write(response)
-        
-            llm = OpenAI()
-            chain = load_qa_chain(llm, chain_type='stuff')
-                
-            with get_openai_callback() as cost:
-                response = chain.run(input_documents=docs, question=query)
-                print(cost)
-            
-            st.write(response)
+def get_pdf_file():
+    if uploaded_file is not None:
+        tfile = tempfile.NamedTemporaryFile(delete=False) 
+        tfile.write(uploaded_file.read())
+        print(tfile.name)
+        return tfile.name  # return file path
 
 
-st.divider()
-st.write("Thanks for using FinanceAI!")
+uploaded_file_csv = st.file_uploader('Upload your CSV File', type='csv')
+
+def get_csv_file():  
+    if uploaded_file_csv is not None:
+        tfile = tempfile.NamedTemporaryFile(delete=False) 
+        tfile.write(uploaded_file_csv.read())
+        return tfile.name 
+
+
