@@ -30,4 +30,4 @@ st.page_link("pages/user.py", label="START CHATTING🤖")
 
 
 st.divider()
-st.write("Thanks for using FinanceAI 🪙")
+st.markdown("<span style='margin-left: 260px; font-weight: 20px; font-size: 15px'>Thanks for using FinanceAI 🪙</span>", unsafe_allow_html=True)
