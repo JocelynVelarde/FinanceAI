@@ -6,3 +6,4 @@ langchain-experimental
 pypdf2
 temp
 langchain-community
+tabulate
