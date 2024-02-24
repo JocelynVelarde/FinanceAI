@@ -58,7 +58,7 @@ Deployed with: Streamlit Cloud
 
 ## Demo
 
-[YouTube](https://www.youtube.com/watch?v=poZN7ochd2Y&t=22s)
+[YouTube](https://www.youtube.com/watch?v=yHeFV8sdVzY)
 
 
 ## License
