@@ -6,3 +6,4 @@ langchain-experimental
 langchain
 pypdf2
 tempfiles
+langchain-community
