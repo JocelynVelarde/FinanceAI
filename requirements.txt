@@ -5,3 +5,4 @@ langchain-openai
 langchain-experimental
 langchain
 pypdf2
+tempfiles
