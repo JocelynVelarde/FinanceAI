@@ -22,6 +22,7 @@ query = st.text_input('Ask a question to the PDF')
 
 contact_agent = st.button('Contact Agent')
 if contact_agent:
+    st.info("Matching you with the optimal agent... 🔍")
     if uploaded_file is not None:
         with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
             tmp_file.write(uploaded_file.getvalue())
@@ -29,10 +30,11 @@ if contact_agent:
             agent = create_agent(tmp_file.name)
             response = agent.run(query)
             st.write("" + response)
-        
-         
+
+             
 cancel_button = st.button('Find solution')
 if cancel_button:
+    st.info("Finding the best solution for your issue... 🔍")
     if pdf is not None:
             pdf_reader = PdfReader(pdf)
             # Text variable will store the pdf text
@@ -54,6 +56,8 @@ if cancel_button:
                     response = chain.run(input_documents=docs, question=query)
                     print(cost)
                 
+                st.divider()
+                st.sidebar.write("Cost: ", cost)
                 st.write(response)
 
 
