@@ -45,7 +45,7 @@ def create_agent(file_path):
     # Create the agent using create_csv_agent() or a similar function
     agent = create_csv_agent(
         #tools=[injection_identifier],
-        llm=OpenAI(temperature=0, max_tokens=100, api_key=ApiKey),
+        llm=OpenAI(temperature=0, max_tokens=100),
         path=file_path,
         verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION)
     return agent
