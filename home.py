@@ -10,7 +10,7 @@ st.write("We have multiple amazing features for administrators and users.")
 admin_col, user_col = st.columns(2)
 
 with admin_col:
-	st.markdown("<span style='font-family: 'Mabry Pro'; text-align: center; font-weight: 20px;'>Admin</span>", unsafe_allow_html=True)
+	st.markdown("<span style='text-align: center; font-weight: 20px;'>Admin</span>", unsafe_allow_html=True)
 	st.write('- Upload your own knowledge base about relevant information in your company.')
 	st.write('- Additioanlly include a personalized data base with employee information so people can ask about who can solve their problems and be in contact with them.')
 	st.write('- With our data vecotirization information can be secure and not wide spread.')
