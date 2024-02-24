@@ -61,5 +61,5 @@ with col2:
 
 st.divider()
 
-st.markdown("<span style='margin-left: 230px; font-weight: 20px; font-size: 15px'>Thanks for using FinanceAI 🪙</span>", unsafe_allow_html=True)
+st.markdown("<span style='margin-left: 260px; font-weight: 20px; font-size: 15px'>Thanks for using FinanceAI 🪙</span>", unsafe_allow_html=True)
 
