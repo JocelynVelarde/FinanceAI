@@ -24,7 +24,7 @@ with col1:
     st.write(" ")
     st.write(" ")
 
-    st.page_link("pages/user.py", label="   START CHAT")
+    st.page_link("pages/user.py", label="START CHAT")
 
 with col2:
     st.image('https://cdn-icons-png.flaticon.com/512/5356/5356355.png', width=500)
