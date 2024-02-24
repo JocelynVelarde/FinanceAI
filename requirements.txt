@@ -4,5 +4,5 @@ faiss-gpu
 langchain-openai
 langchain-experimental
 pypdf2
-tempfiles
+temp
 langchain-community
