@@ -1,5 +1,8 @@
 import streamlit as st
-
+st.set_page_config(
+        page_title="FinanceAI",
+        page_icon=":robot_face:",
+)
 with open('./styles/getstarted.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
