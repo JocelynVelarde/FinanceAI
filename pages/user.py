@@ -8,7 +8,7 @@ import tempfile
 from pages.admin import get_pdf_file, get_csv_file
 
 
-st.title("Welcome to the user page")
+st.title("Type in your question and we will find the best solution for you! 🚀")
 st.divider()
 
 pdf = st.sidebar.file_uploader('Upload your PDF Document', type='pdf')
@@ -29,7 +29,7 @@ if contact_agent:
             tmp_file.flush()
             agent = create_agent(tmp_file.name)
             response = agent.run(query)
-            st.write("" + response)
+            st.write("You can contact: " + response)
 
              
 cancel_button = st.button('Find solution')
@@ -62,4 +62,4 @@ if cancel_button:
 
 
 st.divider()
-st.write("Thanks for using FinanceAI!")
+st.write("Thanks for using FinanceAI 🪙")

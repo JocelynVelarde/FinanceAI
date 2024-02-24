@@ -1,0 +1,6 @@
+openai
+faiss-cpu
+faiss-gpu
+langchain-openai
+langchain-experimental
+langchain
