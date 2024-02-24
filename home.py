@@ -10,7 +10,7 @@ st.write("We have multiple amazing features for administrators and users.")
 admin_col, user_col = st.columns(2)
 
 with admin_col:
-	st.markdown("<span style='margin-left: 100px; font-weight: 20px; font-size: 40px'>Admin</span>", unsafe_allow_html=True)
+	st.markdown("<span style='margin-left: 110px; font-weight: 20px; font-size: 40px'>Admin</span>", unsafe_allow_html=True)
 	st.write('- Upload your own knowledge base about relevant information in your company.')
 	st.write('- Additioanlly include a personalized data base with employee information so people can ask about who can solve their problems and be in contact with them.')
 	st.write('- With our data vecotirization information can be secure and not wide spread.')
@@ -18,11 +18,11 @@ with admin_col:
 	st.write('- Use of personalized agents to determine actions in base of existing data to avoid hallusinations.')
 
 with user_col:
-	st.markdown("<span style='margin-left: 100px; font-weight: 20px; font-size: 40px'>User</span>", unsafe_allow_html=True)
+	st.markdown("<span style='margin-left: 110px; font-weight: 20px; font-size: 40px'>User</span>", unsafe_allow_html=True)
 	st.markdown("<span style='text-align: left; font-weight: 20px'>- Start a conversation with the chatbot.</span>", unsafe_allow_html=True)
-	st.markdown('- Ask about relevant information in your company.')
-	st.markdown('- Ask about who can solve your problems and be in contact with them.')
-	st.markdown('- Receive personalized information about your company and problem solving.')
+	st.markdown("<span style='text-align: left; font-weight: 20px'>- Ask about relevant information in your company.</span>", unsafe_allow_html=True)
+	st.markdown("<span style='text-align: left; font-weight: 20px'>- Ask about who can solve your problems and be in contact with them.</span>", unsafe_allow_html=True)
+	st.markdown("<span style='text-align: left; font-weight: 20px'>- Receive personalized information about your company and problem solving.</span>", unsafe_allow_html=True)
       
 st.divider()
 
