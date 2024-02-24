@@ -3,7 +3,6 @@ faiss-cpu
 faiss-gpu
 langchain-openai
 langchain-experimental
-langchain
 pypdf2
 tempfiles
 langchain-community
