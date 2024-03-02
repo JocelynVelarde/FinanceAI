@@ -9,7 +9,7 @@ Just ask and we will respond
 
 - [@JocelynVelarde](https://github.com/JocelynVelarde)
 - [@Diego785xd](https://github.com/Diego785xd)
-- [@](https://github.com/)
+- [@SOGAZG1598](https://github.com/SOGAZG1598)
 - [@](https://github.com/)
 
 
